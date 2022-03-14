@@ -3,11 +3,13 @@ import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
+import carrito from "./img/carrito.png";
 import "./NavBar.css"
 
 
 function NavBar(){
     return(
+      <div navBox>
         <Navbar bg="white" expand="md">
         <Container>
           <Navbar.Brand className="titulo" href="#">Outfit Reaction</Navbar.Brand>
@@ -26,9 +28,29 @@ function NavBar(){
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <div className="carritoBox">
+          <img className="carrito" src={carrito} alt="Carrito"/>
+          <p id="compras" className="numero">0</p>
+          </div>
+          
         </Container>
+
       </Navbar>
+     </div>
     )
 }
 
-export default NavBar;
+export function ItemListContainer(){
+  return(
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio odit, veniam ipsa vitae tempore earum sit molestiae. Est explicabo veritatis porro corrupti eos aliquam deleniti perferendis sequi ratione veniam. Possimus.</p>
+
+  )
+}
+
+
+
+export default NavBar ; 
+
+
+
