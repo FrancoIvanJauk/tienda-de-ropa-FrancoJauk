@@ -1,0 +1,20 @@
+.boxContador{
+    display: flex;
+    width: 150px;
+    height: 50px;
+}
+.numeroContador{
+    font-size: 30px;
+}
+.botonContador{
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 0px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.agregar{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}

@@ -42,12 +42,9 @@ function NavBar(){
 
 export function ItemListContainer(){
   return(
-
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio odit, veniam ipsa vitae tempore earum sit molestiae. Est explicabo veritatis porro corrupti eos aliquam deleniti perferendis sequi ratione veniam. Possimus.</p>
-
+<h1>Outfit Reaction</h1>
   )
 }
-
 
 
 export default NavBar ; 
