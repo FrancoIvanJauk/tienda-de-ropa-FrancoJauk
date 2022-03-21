@@ -1,0 +1,18 @@
+.buzo{
+    width: 300px;
+    display: flex;
+    margin-right: auto;
+}
+.info{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 2px;
+    float: right;
+}
+.itemBox{
+    display: flex;
+}
+.infoRopa{
+    margin-left: 5px;
+}

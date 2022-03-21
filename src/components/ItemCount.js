@@ -20,7 +20,7 @@ function ItemCount(){
     }
 
 return(
-    <div>
+    <div className="itemCountBox">
         <div className="boxContador">
             <button className="botonContador" onClick={disminuir}>-</button>
             <p className="numeroContador">{contador}</p>
