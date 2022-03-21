@@ -40,11 +40,7 @@ function NavBar(){
     )
 }
 
-export function ItemListContainer(){
-  return(
-<h1>Outfit Reaction</h1>
-  )
-}
+
 
 
 export default NavBar ; 
