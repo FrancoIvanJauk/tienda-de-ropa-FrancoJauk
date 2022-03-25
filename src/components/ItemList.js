@@ -1,20 +1,18 @@
-import React from "react";
-import {informacionRopa} from "./Item"
 
 
-
-let buzo = [
+export let buzo = [
     {
         talle: 'S',
         color: 'Gris',
-        disponibles: 5
+        disponibles: 5,
+        costo: "$2000"
 
     }
 ]
 
 
 function buzoInfo(){
-    const nuevo = buzo.map((elemento)=> `Talle: ${elemento.talle} 
+    const producto = buzo.map((elemento)=> `Talle: ${elemento.talle} 
 Color: ${elemento.color} 
 Disponibles: ${elemento.disponibles}`)
 
@@ -28,7 +26,7 @@ Disponibles: ${elemento.disponibles}`)
    })
    resultado
    .then(res=>{
-    setTimeout(()=>{ alert(nuevo ) },2000);
+    setTimeout(()=> alert(producto) ,2000);
 
    })
    .catch(err=>{
@@ -36,20 +34,6 @@ Disponibles: ${elemento.disponibles}`)
    })
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default buzoInfo

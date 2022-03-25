@@ -1,0 +1,27 @@
+.ItemDetailBox{
+    margin-top: 100px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.imgItemDetail{
+    height: 400px;
+    width: 400px;
+}
+.letras{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.infoProducto{
+    width: 400px;
+}
+h2{
+    text-align: center;
+}
+.ItemCount{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
