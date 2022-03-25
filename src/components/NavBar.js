@@ -7,6 +7,7 @@ import carrito from "./img/carrito.png";
 import "./NavBar.css"
 
 
+
 function NavBar(){
     return(
       <div navBox>

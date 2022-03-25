@@ -1,5 +1,5 @@
 import React from "react";
-import buzo from "./img/Buzos/buzo.jpeg"
+import buzo from "./img/Buzos/imgBuzo.jpeg"
 import "./Item.css"
 import buzoInfo from "./ItemList";
 
@@ -14,11 +14,9 @@ function Item(){
             <button className="info" onClick={info} id="info">Info</button>
             <img className="buzo" src={buzo}></img>
             </div>
-            <p className="infoRopa" id="informacionRopa"></p>
         </div>
     )
 };
-
 
 //efecto espera
 let efectoEspera = separacion => {
@@ -35,7 +33,8 @@ let efectoEspera = separacion => {
 
 //lo que se ejecuta al apretar info
 function info (){
-    botonInfo.innerHTML=""
+    botonInfo.innerHTML="";
+    
     efectoEspera(".....");
     
     buzoInfo();
@@ -44,8 +43,6 @@ function info (){
      },2500);
     
 }
-
-
 
 
 
