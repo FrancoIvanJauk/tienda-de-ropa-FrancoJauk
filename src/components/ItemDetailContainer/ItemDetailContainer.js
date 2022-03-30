@@ -12,7 +12,6 @@ const ItemDetailContainer = () => {
     const [cargando, setCargando] = useState(true)
 
     const {itemId} = useParams()
-    console.log(itemId)
     
             useEffect(()=>{
               getProducts
