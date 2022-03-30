@@ -1,26 +1,25 @@
-import './components/NavBar';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import './App.css';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import './components/NavBar/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom'
+
 
 
 
 
 function App() {
   return (
-    <div> 
-      <NavBar/>
-    
-    <div className="productosBox">
-        <ItemListContainer/>
-    </div>
-    <div>
-      <ItemDetailContainer/>
-    </div>
+    <BrowserRouter>
+          <NavBar/>
+      <Routes>
+      <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
+      <Route path='/detalles/:itemId' element={<ItemDetailContainer/>}/>
 
-  
-    </div>
+      <Route path='*' element={ <Navigate to='/'/> }/>
+      </Routes>
+    </BrowserRouter> 
   );
 }
 

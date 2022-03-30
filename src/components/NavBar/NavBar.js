@@ -1,10 +1,14 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
-import carrito from "./img/carrito.png";
+import carrito from "../img/carrito.png";
 import "./NavBar.css"
+
+
+
 
 
 
@@ -13,19 +17,18 @@ function NavBar(){
       <div navBox>
         <Navbar bg="white" expand="md">
         <Container>
-          <Navbar.Brand className="titulo" href="#">Outfit Reaction</Navbar.Brand>
+          <Link className="titulo" to="/">Outfit Reaction</Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto opciones">
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">Contacto</Nav.Link>
+              <Link className="navegable" to="/">Home</Link>
               <NavDropdown title="Prendas" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">Camisetas</NavDropdown.Item>
-                <NavDropdown.Item href="#">Buzos</NavDropdown.Item>
-                <NavDropdown.Item href="#">Camperas</NavDropdown.Item>
-                <NavDropdown.Item href="#">Pantalones</NavDropdown.Item>
+                <Link className="ropa" to="/categoria/remeras">Remeras</Link>
+                <Link className="ropa" to="/categoria/buzos">Buzos</Link>
+                <Link className="ropa" to="/categoria/camperas">Camperas</Link>
+                <Link className="ropa" to="/categoria/pantalones">Pantalones</Link>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#">Accesorios</NavDropdown.Item>
+                <Link className="ropa" to="/categoria/accesorios">Accesorios</Link>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -33,7 +36,6 @@ function NavBar(){
           <img className="carrito" src={carrito} alt="Carrito"/>
           <p id="compras" className="numero">0</p>
           </div>
-          
         </Container>
 
       </Navbar>

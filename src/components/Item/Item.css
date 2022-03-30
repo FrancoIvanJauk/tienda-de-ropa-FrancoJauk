@@ -1,4 +1,4 @@
-.buzo{
+.imagen{
     width: 300px;
     display: flex;
     margin-right: auto;
@@ -10,9 +10,13 @@
     margin-top: 2px;
     float: right;
 }
-.itemBox{
-    display: flex;
-}
+
 .infoRopa{
     margin-left: 5px;
+}
+.item{
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
 }

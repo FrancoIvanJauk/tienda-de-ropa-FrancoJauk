@@ -1,0 +1,47 @@
+.titulo{
+    font-size: 30px!important;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+.titulo:hover{
+    color: rgb(0, 0, 0);
+}
+.opciones{
+    margin-top: 10px;
+}
+
+.navBox{
+    display: flex;
+}
+
+.carritoBox{
+    display: flex;
+}
+
+.carrito{
+    width: 30px;
+    height: 30px;
+}
+.numero{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.ropa{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.ropa:hover{
+    color: rgb(0, 0, 0);
+}
+.navegable{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.navegable:hover{
+    color: rgb(0, 0, 0);
+}
