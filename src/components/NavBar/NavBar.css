@@ -1,7 +1,6 @@
 .titulo{
     font-size: 30px!important;
     margin-right: 40px;
-    text-decoration: none;
     color: rgb(41, 41, 41);
 }
 .titulo:hover{
@@ -23,12 +22,7 @@
     width: 30px;
     height: 30px;
 }
-.numero{
-    margin-top: 5px;
-    font-size: 20px;
-}
 .ropa{
-    text-decoration: none;
     color: rgb(112, 112, 112);
     display: grid;
     grid-template-rows: 1fr;
@@ -37,11 +31,74 @@
     color: rgb(0, 0, 0);
 }
 .navegable{
-    text-decoration: none;
     color: rgb(112, 112, 112);
     margin-top: 7px;
     margin-right: 10px;
 }
 .navegable:hover{
     color: rgb(0, 0, 0);
+}
+.numero{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.botonCarrito{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.botonyCarrito{
+    display: flex;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.dropdown-menu{
+    text-align: center!important;
+}
+.btn-primary.dropdown-toggle {
+    border: #000000!important;
+    color: #000000!important;
+    background-color: #ffffff00!important;
+    box-shadow:none!important;
+}
+.imgDownButton{
+    width: 120px;
+    height: 120px;
+}
+.tituloDownButton{
+    font-size: 20px;
+}
+.itemsDownButtom{
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.CompraDownButton{
+    display: flex;
+    justify-content: center;
+}
+.infoCompraDownButton{
+    margin-top: 5px;
+    font-size: 15px;
+}
+.borrarItemDownButton{
+    float: right;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 20px;
+}
+.CompraDownButton{
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dropstart .dropdown-menu[data-bs-popper] {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
