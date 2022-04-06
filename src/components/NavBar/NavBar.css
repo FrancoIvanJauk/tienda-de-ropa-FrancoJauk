@@ -102,3 +102,6 @@ a:link, a:visited, a:active {
     overflow-y: auto;
     overflow-x: hidden;
 }
+.downButtonCompra .dropdown-menu{
+    width: 322px;
+}

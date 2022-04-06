@@ -37,3 +37,10 @@
     border: none;
     font-size: 20px;
 }
+.sinProductosTitulo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.verProductos{
+    border-radius: 5px;
+}

@@ -7,7 +7,7 @@ import {BsFillTrashFill} from "react-icons/bs"
 
 const CartWidget = () =>{
 
-    const {cart, borrarItem} = useContext(CartContext)
+    const {cart, borrarItem, cartTotal} = useContext(CartContext)
 
     const {cartCantidad} = useContext(CartContext)
 
@@ -16,8 +16,7 @@ const CartWidget = () =>{
         <Link className="botonyCarrito" to="/Cart"><button className="botonCarrito"><BsFillCartFill className="carrito"/></button>
         <span className="numero">{cartCantidad()}</span>
         </Link>
-
-        <DropdownButton drop={"start"}>
+        <DropdownButton className="downButtonCompra" drop={"start"}>
         {
             cart.map((item)=>(
                 <div key={item.id}>
@@ -44,7 +43,10 @@ const CartWidget = () =>{
             ))
         }
 
-        <Link to="/Cart"><button className="CompraDownButton">Terminar Compra</button></Link>
+        {
+            cartTotal() === 0 ? <h5>No tiene productos seleccionados</h5>
+             : <Link to="/Cart"><button className="CompraDownButton">Terminar Compra</button></Link>
+        }
         </DropdownButton>
 
         </>
