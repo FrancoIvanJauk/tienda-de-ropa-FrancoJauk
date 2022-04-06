@@ -25,3 +25,8 @@ h2{
     justify-content: center;
     margin-top: 70px;
 }
+.terminar{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 50px;
+}

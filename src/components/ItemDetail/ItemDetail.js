@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';
 import { useState } from "react";
+import {CartContext} from "../../context/CartContext"
+import { Link } from "react-router-dom";
 
 
 function ItemDetail({productDetail}){
-
     const {nombre, precio, img, disponibles,id } = productDetail
 
-    const [cantidad, setCantidad] = useState(0)
+    const {cart, agregarItem, limiteCompra} = useContext(CartContext)
+    console.log(cart)
+
+
+    const [cantidad, setCantidad] = useState(1)
 
     const agregarAlCarrito = () => {
         const agregar = {
             id,
             nombre,
             precio,
-            cantidad
+            cantidad,
+            img
         }
-    console.log(agregar)
+
+        agregarItem(agregar)
     }
 
     return(
@@ -28,7 +35,11 @@ function ItemDetail({productDetail}){
                 <p className="letras">Prendas Disponibles: {disponibles}</p>
                 <p className="letras">Precio: ${precio}</p>
                 <div className="ItemCount">
-                <ItemCount max={disponibles} onAdd={agregarAlCarrito} cantidad={cantidad} setCantidad={setCantidad}/>
+                {
+                    !limiteCompra(id) ? 
+                    <ItemCount max={disponibles} onAdd={agregarAlCarrito} cantidad={cantidad} setCantidad={setCantidad}/>
+                    : <Link to={"/Cart"}><button className="terminar">Terminar Compra</button></Link>
+                }
                 </div>
             </div>
 

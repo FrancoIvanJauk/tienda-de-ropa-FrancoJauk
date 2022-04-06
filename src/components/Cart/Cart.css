@@ -1,0 +1,39 @@
+.todosLosItems{
+    text-align: center;
+}
+.imgCompra{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.Compra{
+    display: flex;
+    justify-content: center;
+}
+.infoCompra{
+    margin-top:30px;
+    margin-left: 20px;
+}
+.items{
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 500px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.total{
+    margin-top: 50px;
+}
+.borrar{
+    background-color: rgb(194, 32, 32);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.borrarItem{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 20px;
+}

@@ -4,8 +4,8 @@ import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
-import carrito from "../img/carrito.png";
 import "./NavBar.css"
+import CartWidget from "../CartWidget/CartWidget";
 
 
 
@@ -33,8 +33,7 @@ function NavBar(){
             </Nav>
           </Navbar.Collapse>
           <div className="carritoBox">
-          <img className="carrito" src={carrito} alt="Carrito"/>
-          <p id="compras" className="numero">0</p>
+          <CartWidget/>
           </div>
         </Container>
 

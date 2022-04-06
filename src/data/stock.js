@@ -1,74 +1,81 @@
-import foto from "../components/img/fotos/foto.jpg"
+import buzo1 from "../components/img/fotos/buzo/buzo1.png"
+import buzo2 from "../components/img/fotos/buzo/buzo2.png"
+import remera1 from "../components/img/fotos/remera/remera1.png"
+import remera2 from "../components/img/fotos/remera/remera2.png"
+import pantalon1 from "../components/img/fotos/pantalon/pantalon1.png"
+import campera1 from "../components/img/fotos/campera/campera1.png"
+import campera2 from "../components/img/fotos/campera/campera2.png"
+import accesorio1 from "../components/img/fotos/accesorio/accesorio1.png"
 
 const stock = [
     {
-        nombre: 'Buzo',
+        nombre: 'Buzo Vinson',
         id: 1,
-        precio: 3000,
-        img: foto,
+        precio: 4500,
+        img: buzo1,
         disponibles: 5,
         categoria: 'buzos',
         oferta: false
     },
     {
-        nombre: 'Buzo',
+        nombre: 'Buzo Termico Beyer',
         id: 2,
-        precio: 3500,
-        img: foto,
+        precio: 4000,
+        img: buzo2,
         disponibles: 5,
         categoria: 'buzos',
         oferta: false
     },
     {
-        nombre: 'Remera',
+        nombre: 'Remera Champion',
         id: 3,
-        precio: 2500,
-        img: foto,
+        precio: 5000,
+        img: remera1,
         disponibles: 5,
         categoria: 'remeras',
         oferta: false
     },
     {
-        nombre: 'Pantalon',
+        nombre: 'Remera Topper',
         id: 4,
-        precio: 1500,
-        img: foto,
+        precio: 3000,
+        img: remera2,
         disponibles: 5,
         categoria: 'remeras',
         oferta: false
     },
     {
-        nombre: 'Pantalon',
+        nombre: 'Pantalón NIKE',
         id: 5,
-        precio: 2500,
-        img: foto,
+        precio: 6000,
+        img: pantalon1,
         disponibles: 5,
         categoria: 'pantalones',
         oferta: false
     },
     {
-        nombre: 'Campera',
+        nombre: 'Campera Converse',
         id: 6,
-        precio: 4500,
-        img: foto,
+        precio: 7500,
+        img: campera1,
         disponibles: 5,
         categoria: 'camperas',
         oferta: false
     },
     {
-        nombre: 'Campera',
+        nombre: 'Campera NIKE',
         id: 7,
         precio: 3500,
-        img: foto,
+        img: campera2,
         disponibles: 5,
         categoria: 'camperas',
         oferta: false
     },
     {
-        nombre: 'Accesorios',
+        nombre: 'Billetera Quiksilver',
         id: 8,
-        precio: 2500,
-        img: foto,
+        precio: 5000,
+        img: accesorio1,
         disponibles: 5,
         categoria: 'accesorios',
         oferta: false

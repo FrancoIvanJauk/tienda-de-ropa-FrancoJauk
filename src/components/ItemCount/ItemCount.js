@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./ItemCount.css"
 
 function ItemCount({max, onAdd, cantidad, setCantidad}){
@@ -15,7 +14,7 @@ function ItemCount({max, onAdd, cantidad, setCantidad}){
 
     const disminuir = () => {
         setCantidad(cantidad - 1)
-        if (cantidad === 0){
+        if (cantidad === 1){
             setCantidad(cantidad - 0)
         }
     }
@@ -28,7 +27,6 @@ return(
             <button className="botonContador" onClick={incrementar}>+</button>
         </div>
         <button className="agregar" onClick={onAdd} >Agregar al carrito</button>
-        <Link to={"/Cart"}><button className="agregar">Terminar Compra</button></Link>
     </div>
 )
 }
