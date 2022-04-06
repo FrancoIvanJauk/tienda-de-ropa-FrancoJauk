@@ -35,11 +35,18 @@ function ItemDetail({productDetail}){
                 <p className="letras">Prendas Disponibles: {disponibles}</p>
                 <p className="letras">Precio: ${precio}</p>
                 <div className="ItemCount">
+
                 {
                     !limiteCompra(id) ? 
                     <ItemCount max={disponibles} onAdd={agregarAlCarrito} cantidad={cantidad} setCantidad={setCantidad}/>
-                    : <Link to={"/Cart"}><button className="terminar">Terminar Compra</button></Link>
+                    : <Link to="/"><button className="botones">Ver mas productos</button></Link>
                 }
+
+
+                {
+                    limiteCompra(id) && <Link to={"/Cart"}><button className="botones">Terminar Compra</button></Link>
+                }
+
                 </div>
             </div>
 
