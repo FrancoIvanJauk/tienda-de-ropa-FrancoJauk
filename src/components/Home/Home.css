@@ -1,0 +1,84 @@
+
+.fotos{
+    object-fit: cover;
+}
+.w-100 {
+    margin: 50px auto 50px auto;
+    height: 525px;
+}
+.infoAyuda{
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.botonExplorar{
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+}
+.textoCarrusel{
+    max-width: 550px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px!important;
+}
+.iconos{
+    display: flex;
+    font-size: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.titulosInfo{
+    text-align: center;
+    font-size: 23px!important;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+.textoInfo{
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(54, 54, 54);
+    font-family: 'Roboto', sans-serif;
+}
+.imagenesGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 45px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boxImagenes{
+    height: 170px;
+    margin: 2px 2px 2px 2px;
+}
+.boxImagenes:hover{
+    background-color: rgb(255, 196, 0);
+}
+.imagenesLink{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
+}
+.imagenesLink:hover{
+    padding: 2px 2px 2px 2px;
+}
+.tituloImgInfo{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+}

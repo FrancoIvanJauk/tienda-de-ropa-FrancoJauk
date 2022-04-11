@@ -2,6 +2,8 @@
     font-size: 30px!important;
     margin-right: 40px;
     color: rgb(41, 41, 41);
+    font-family: var(--bs-body-font-family);
+    font-family: 'Roboto', sans-serif;
 }
 .titulo:hover{
     color: rgb(0, 0, 0);
@@ -19,13 +21,14 @@
 }
 
 .carrito{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .ropa{
     color: rgb(112, 112, 112);
     display: grid;
     grid-template-rows: 1fr;
+    font-family: 'Roboto', sans-serif;
 }
 .ropa:hover{
     color: rgb(0, 0, 0);
@@ -34,13 +37,15 @@
     color: rgb(112, 112, 112);
     margin-top: 7px;
     margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .navegable:hover{
     color: rgb(0, 0, 0);
 }
 .numero{
-    font-size: 25px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
+    margin-top: 8px;
 }
 .botonCarrito{
     border: none;
@@ -68,10 +73,11 @@ a:link, a:visited, a:active {
 }
 .tituloDownButton{
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .itemsDownButtom{
     margin-top: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 196, 0);
     width: 300px;
     border-radius: 5px;
     margin-left: 10px;
@@ -81,15 +87,28 @@ a:link, a:visited, a:active {
     display: flex;
     justify-content: center;
 }
+.terminarCompraDownButton{
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.terminarCompraDownButton:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 196, 0);
+}
 .infoCompraDownButton{
     margin-top: 5px;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 .borrarItemDownButton{
     float: right;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.borrarItemDownButton:hover{
+    color: rgb(228, 9, 9);
 }
 .CompraDownButton{
     border-radius: 5px;
@@ -97,11 +116,24 @@ a:link, a:visited, a:active {
     margin-left: auto;
     margin-right: auto;
 }
-.dropstart .dropdown-menu[data-bs-popper] {
-    max-height: 400px;
+
+.downButtonCompra .dropdown-menu{
+    width: 336px;
+}
+.downButtonCompra .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -200px!important;
+    margin-top: 0.125rem;
     overflow-y: auto;
     overflow-x: hidden;
+    max-height: 400px;
 }
-.downButtonCompra .dropdown-menu{
-    width: 322px;
+.dropdown-toggle::after {
+    color: rgb(255, 196, 0);
+}
+.dropdown-toggle:empty::after {
+    color: rgb(255, 196, 0)!important;
+}
+p{
+    font-family: 'Roboto', sans-serif;
 }

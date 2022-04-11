@@ -26,7 +26,7 @@ const Cart = () =>{
                                 <p>Cantidad: {item.cantidad}</p>
                                 <p>Precio por Unidad: {item.precio}</p>
                                 <p>Precio Total: {item.precio * item.cantidad}</p>
-                                <button className="borrarItem" onClick={() => borrarItem(item.id)}><BsFillTrashFill /></button>
+                                <button className="borrarItem" onClick={() => borrarItem(item.id)}><BsFillTrashFill/></button>
                             </div>
     
                         </div>
@@ -41,7 +41,7 @@ const Cart = () =>{
              : <h4 className="total">TOTAL: ${cartTotal()}</h4> 
         }
         {
-            cartTotal() === 0 ? <Link to="/"><button className="verProductos">Ver Productos</button></Link>
+            cartTotal() === 0 ? <Link to="/todo"><button className="verProductos">Ver Productos</button></Link>
              : <button onClick={vaciarCarrito} className="borrar">Vaciar Carrito</button>
         }
     </div>
