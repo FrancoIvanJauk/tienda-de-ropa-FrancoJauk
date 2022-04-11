@@ -17,7 +17,15 @@ display: flex;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+.botonContador:hover{
+    background-color: rgb(255, 255, 255);
+}
 .agregar{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.agregar:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 196, 0);
 }

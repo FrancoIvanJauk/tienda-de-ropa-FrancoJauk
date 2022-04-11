@@ -13,15 +13,18 @@
 .infoCompra{
     margin-top:30px;
     margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .items{
     margin-top: 30px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 196, 0);
     width: 500px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 1px 1px 10px 1px rgb(231, 218, 141);
 }
+
 .total{
     margin-top: 50px;
 }
@@ -31,11 +34,18 @@
     border-radius: 5px;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.borrar:hover{
+    background-color: rgb(216, 23, 23);
 }
 .borrarItem{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
     border: none;
     font-size: 20px;
+}
+.borrarItem:hover{
+    color: rgb(255, 0, 0);
 }
 .sinProductosTitulo{
     margin-top: 50px;
@@ -43,4 +53,8 @@
 }
 .verProductos{
     border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.verProductos:hover{
+    background-color: rgb(224, 224, 224);
 }

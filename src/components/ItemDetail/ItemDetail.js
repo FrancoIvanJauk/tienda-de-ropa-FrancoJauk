@@ -39,7 +39,7 @@ function ItemDetail({productDetail}){
                 {
                     !limiteCompra(id) ? 
                     <ItemCount max={disponibles} onAdd={agregarAlCarrito} cantidad={cantidad} setCantidad={setCantidad}/>
-                    : <Link to="/"><button className="botones">Ver mas productos</button></Link>
+                    : <Link to="/todo"><button className="botones">Ver mas productos</button></Link>
                 }
 
 

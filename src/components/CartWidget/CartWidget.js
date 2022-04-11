@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
-import {BsFillCartFill} from "react-icons/bs";
+import {BsCart3} from "react-icons/bs";
 import { DropdownButton } from "react-bootstrap";
 import {BsFillTrashFill} from "react-icons/bs"
 
@@ -13,13 +13,13 @@ const CartWidget = () =>{
 
     return(
         <>
-        <Link className="botonyCarrito" to="/Cart"><button className="botonCarrito"><BsFillCartFill className="carrito"/></button>
+        <Link className="botonyCarrito" to="/Cart"><button className="botonCarrito"><BsCart3 className="carrito"/></button>
         <span className="numero">{cartCantidad()}</span>
         </Link>
-        <DropdownButton className="downButtonCompra" drop={"start"}>
+        <DropdownButton className="downButtonCompra" drop={"down"} >
         {
             cart.map((item)=>(
-                <div key={item.id}>
+                <div key={item.id} >
                     <div className="itemsDownButtom">
 
                         <button className="borrarItemDownButton" onClick={() => borrarItem(item.id)}><BsFillTrashFill /></button>
@@ -45,7 +45,7 @@ const CartWidget = () =>{
 
         {
             cartTotal() === 0 ? <h5>No tiene productos seleccionados</h5>
-             : <Link to="/Cart"><button className="CompraDownButton">Terminar Compra</button></Link>
+             : <Link to="/Cart"><button className="terminarCompraDownButton">Terminar Compra</button></Link>
         }
         </DropdownButton>
 
