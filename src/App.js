@@ -7,6 +7,8 @@ import Home from './components/Home/Home';
 import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom'
 import { CartProvider } from './context/CartContext';
 import Footer from './components/Footer/Footer';
+import Checkout from './components/Checkout/Checkout';
+import Compra from './components/Compra/Compra';
 
 
 
@@ -23,7 +25,9 @@ function App() {
         <Route path='/todo' element={<ItemListContainer/>}/>
         <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
         <Route path='/detalles/:itemId' element={<ItemDetailContainer/>}/>
-        <Route path='/Cart' element={<Cart/>}></Route>
+        <Route path='/Cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/compra' element={<Compra/>} />
         <Route path='*' element={ <Navigate to='/home'/> }/>
         </Routes>
         <Footer/>

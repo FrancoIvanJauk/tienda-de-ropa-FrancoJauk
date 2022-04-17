@@ -1,7 +1,9 @@
 .imagen{
     width: 300px;
+    height: 300px;
     display: flex;
     margin-right: auto;
+    object-fit: cover;
 }
 .info{
     width: 50px;

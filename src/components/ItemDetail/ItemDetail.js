@@ -7,11 +7,10 @@ import { Link } from "react-router-dom";
 
 
 function ItemDetail({productDetail}){
+    
     const {nombre, precio, img, disponibles,id } = productDetail
 
     const {cart, agregarItem, limiteCompra} = useContext(CartContext)
-    console.log(cart)
-
 
     const [cantidad, setCantidad] = useState(1)
 
