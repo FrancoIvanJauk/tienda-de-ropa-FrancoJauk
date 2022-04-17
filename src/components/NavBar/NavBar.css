@@ -70,6 +70,7 @@ a:link, a:visited, a:active {
 .imgDownButton{
     width: 120px;
     height: 120px;
+    object-fit: cover;
 }
 .tituloDownButton{
     font-size: 20px;

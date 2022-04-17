@@ -3,8 +3,6 @@ import "./ItemCount.css"
 
 function ItemCount({max, onAdd, cantidad, setCantidad}){
 
-
-
     const incrementar = () => {
         setCantidad(cantidad + 1)
         if (cantidad === max){
@@ -19,7 +17,9 @@ function ItemCount({max, onAdd, cantidad, setCantidad}){
         }
     }
 
+
 return(
+    max === 0 ? <div><p className="sinStock">Sin stock</p></div> :
     <div className="itemCountBox">
         <div className="boxContador">
             <button className="botonContador" onClick={disminuir}>-</button>

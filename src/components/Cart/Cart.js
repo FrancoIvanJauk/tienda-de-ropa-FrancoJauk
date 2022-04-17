@@ -44,6 +44,9 @@ const Cart = () =>{
             cartTotal() === 0 ? <Link to="/todo"><button className="verProductos">Ver Productos</button></Link>
              : <button onClick={vaciarCarrito} className="borrar">Vaciar Carrito</button>
         }
+        {
+            cartTotal() > 0 && <Link to='/checkout'><button className="comprar">Comprar</button></Link>
+        }
     </div>
     )
 }

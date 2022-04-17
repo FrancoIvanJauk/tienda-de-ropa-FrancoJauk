@@ -22,7 +22,6 @@ useEffect(()=>{
     getDocs(q)
       .then(resp => {
         const items = resp.docs.map((doc) => ({id: doc.id, ...doc.data()}))
-        console.log(items)
         setListaProductos(items)
       })
       .finally(() => {
