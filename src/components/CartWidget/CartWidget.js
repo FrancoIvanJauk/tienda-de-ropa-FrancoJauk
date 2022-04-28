@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import {BsCart3} from "react-icons/bs";
-import { DropdownButton } from "react-bootstrap";
+import { DropdownButton ,NavDropdown} from "react-bootstrap";
 import {BsFillTrashFill} from "react-icons/bs"
 
 const CartWidget = () =>{
@@ -16,7 +16,7 @@ const CartWidget = () =>{
         <Link className="botonyCarrito" to="/Cart"><button className="botonCarrito"><BsCart3 className="carrito"/></button>
         <span className="numero">{cartCantidad()}</span>
         </Link>
-        <DropdownButton className="downButtonCompra" drop={"down"} >
+        <NavDropdown className="downButtonCompra" drop={"down"} id="basic-nav-dropdown">
         {
             cart.map((item)=>(
                 <div key={item.id} >
@@ -47,7 +47,7 @@ const CartWidget = () =>{
             cartTotal() === 0 ? <h5>No tiene productos seleccionados</h5>
              : <Link to="/Cart"><button className="terminarCompraDownButton">Terminar Compra</button></Link>
         }
-        </DropdownButton>
+        </NavDropdown>
 
         </>
     )

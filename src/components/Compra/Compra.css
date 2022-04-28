@@ -1,0 +1,85 @@
+.compraFinal{
+    border: solid 1px rgb(255, 196, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+}
+.dosPuntos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight:bolder;
+}
+.soporte{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.info1{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.infoComprador{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.idCompra{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+input.inputid {
+    text-align: center;
+    font-size: 25px!important;
+}
+input {
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+}
+.botonIdCompra{
+    margin-top: 15px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    font-size: 25px;
+}
+.botonIdCompra:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border:1px solid rgb(255, 196, 0);
+    box-shadow: 1px 1px 10px 1px rgb(231, 218, 141);
+}
+.inputid{
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    border-radius: 15px;
+
+}
+
+@media only screen  and (min-width: 0px) and (max-width:518px){
+    input.inputid {
+        text-align: center;
+        font-size: 15px!important;
+    }
+    .botonIdCompra{
+        font-size: 20px;
+    }
+    .idCompra{
+        font-size: 25px;
+    }
+}

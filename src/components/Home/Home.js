@@ -63,19 +63,19 @@ function Home(){
             
             <div className="infoAyuda">
 
-              <div>
+              <div className="informacion">
                 <BsBag className="iconos"/>
                 <h5 className="titulosInfo">¿Cómo Comprar?</h5>
                 <p className="textoInfo">Seleccioná los artículos que quieras comprar, la cantidad y agregalos a tu carrito de compras. Monto mínimo de compra $5.000.</p>
               </div>
 
-              <div>
+              <div className="informacion">
               <BsCreditCard2Back className="iconos"/>
               <h5 className="titulosInfo">Métodos De Pago</h5>
               <p className="textoInfo">Tarjetas de crédito, débito y transferencia bancaria a través de la web o en efectivo al retirar tu pedido en nuestro local.​</p>
               </div>
 
-              <div>
+              <div className="informacion">
                 <BsTruck className="iconos"/>
                 <h5 className="titulosInfo">Formas De Envío</h5>
                 <p className="textoInfo">Forma de envio mediante correo Argentino transporte FLASH (AMBA) y envíos por encomienda a través de VÍA CARGO o SENDBOX (interior).​</p>

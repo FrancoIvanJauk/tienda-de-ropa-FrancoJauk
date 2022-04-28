@@ -46,10 +46,12 @@ h3{
 .textoInfo{
     text-align: center;
     width: 90%;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     color: rgb(54, 54, 54);
     font-family: 'Roboto', sans-serif;
+    overflow: auto!important;
 }
 .imagenesGrid{
     display: grid;
@@ -81,4 +83,20 @@ h3{
     margin-top: 30px;
     margin-left: 40px;
     color: rgb(255, 255, 255);
+}
+@media only screen  and (min-width: 0px) and (max-width:518px){
+    .infoAyuda{
+        background-color: rgb(238, 238, 238);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .informacion{
+        background-color: rgb(238, 238, 238);
+    }
+    .imagenesGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 470px;
+    }
+
 }
