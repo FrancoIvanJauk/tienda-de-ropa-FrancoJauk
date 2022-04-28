@@ -18,6 +18,7 @@ function NavBar(){
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto opciones">
               <Link className="navegable" to="/home">Home</Link>
+              <Link className="navegable" to="/compra">Compras</Link>
               <NavDropdown className="ropa" title="Prendas" id="basic-nav-dropdown">
                 <Link className="ropa" to="/todo">Todo</Link>
                 <NavDropdown.Divider />

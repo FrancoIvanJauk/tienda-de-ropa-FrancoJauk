@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import './Checkout.css'
 
 
+
 const Checkout = () => {
 
     const {cart, cartTotal, vaciarCarrito} = useContext(CartContext)
@@ -48,10 +49,9 @@ const Checkout = () => {
         const productos = await getDocs(q)
 
         const outOfstock = []
-
+        
         productos.docs.forEach((doc)=>{
             const itemInCart = cart.find((item) => item.id === doc.id)
-
             if(doc.data().disponibles >= itemInCart.cantidad){
                 batch.update(doc.ref, {
                     disponibles: doc.data().disponibles - itemInCart.cantidad
@@ -87,6 +87,8 @@ const Checkout = () => {
                 <h5 className="compraEfectuada">Su compra ha sido realizada exitosamente</h5>
                 <p className="orden"><b>Numero de orden:</b> {ordenId}</p>
                 <Link to='/compra'><button className="boton">Ver Compra</button></Link>
+                <h6 className='atencion'>¡ ATENCIÓN !</h6>
+                <p className='numeroOrden'>Por favor, guarde el número de orden para ver su compra. También será pedida por el repartido para entregar sus productos.</p>
                 </div>
                
     )}

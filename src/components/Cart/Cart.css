@@ -50,10 +50,11 @@
     color: rgb(255, 0, 0);
 }
 .sinProductosTitulo{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px!important;
+    margin-bottom: 80px;
 }
 .verProductos{
+    margin-bottom: 100px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
 }
