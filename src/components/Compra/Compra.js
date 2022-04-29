@@ -82,7 +82,5 @@ return(
 )
 } 
 
-    
-
 
 export default Compra

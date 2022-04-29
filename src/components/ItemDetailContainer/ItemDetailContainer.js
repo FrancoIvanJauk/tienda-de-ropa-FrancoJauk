@@ -3,8 +3,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { db } from "../../firebase/config";
 import { doc, getDoc } from "firebase/firestore";
-
-
+import './ItemDetailContainer.css'
 
 
 
@@ -31,7 +30,7 @@ const ItemDetailContainer = () => {
             }, [itemId])
       return (
         <div>
-            {cargando ? <p>Cargando...</p> : <ItemDetail productDetail={productDetail}/>}
+            {cargando ? <p className="cargando">Cargando...</p> : <ItemDetail productDetail={productDetail}/>}
            
         </div>
       )
