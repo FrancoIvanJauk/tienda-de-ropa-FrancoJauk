@@ -30,6 +30,7 @@ const Compra = () =>{
                 productos.splice(0)
                 nombreComprador.pop()
                 apellidoComprador.pop()
+                email.pop()
 
         const docRef = doc(db, "ordenes", value.idCompra);
         const docSnap = await getDoc(docRef);
@@ -47,9 +48,8 @@ const Compra = () =>{
           alert('Su id a sido incorrecto, intente nuevamente')
           document.getElementById('codigoCompra').value=''
         } 
-
-    
 }
+
 if(info){
     return(
         <div>
