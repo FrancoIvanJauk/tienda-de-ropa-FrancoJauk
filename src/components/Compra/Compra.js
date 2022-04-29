@@ -48,9 +48,8 @@ const Compra = () =>{
           alert('Su id a sido incorrecto, intente nuevamente')
           document.getElementById('codigoCompra').value=''
         } 
-
-    
 }
+
 if(info){
     return(
         <div>
