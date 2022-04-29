@@ -34,7 +34,7 @@ useEffect(()=>{
 
   return (
     <div>
-        {cargando ? <p>Cargando...</p> : <ItemList listaProductos={listaProductos}/>}
+        {cargando ? <p className="cargando">Cargando...</p> : <ItemList listaProductos={listaProductos}/>}
 
     </div>
   )
