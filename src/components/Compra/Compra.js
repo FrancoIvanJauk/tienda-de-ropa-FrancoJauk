@@ -30,6 +30,7 @@ const Compra = () =>{
                 productos.splice(0)
                 nombreComprador.pop()
                 apellidoComprador.pop()
+                email.pop()
 
         const docRef = doc(db, "ordenes", value.idCompra);
         const docSnap = await getDoc(docRef);

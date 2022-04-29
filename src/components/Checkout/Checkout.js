@@ -113,7 +113,7 @@ const Checkout = () => {
                         <input className="infoForm" type={'email'} name='email' placeholder='Email' value={values.email} onChange={handleInputChange} required/>
                     </div>
                     <div>
-                        <input className="infoForm" type={'telefono'} name='telefono' placeholder="Telefono" value={values.telefono} onChange={handleInputChange} required/>
+                        <input  className="infoForm" type={'number'} name='telefono' placeholder="Telefono" value={values.telefono} onChange={handleInputChange} required/>
                     </div>
                     <button className="enviar">Comprar</button>
                 </div> 
