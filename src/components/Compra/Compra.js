@@ -40,7 +40,7 @@ const Compra = () =>{
           nombreComprador.push(docSnap.data().comprador.nombre)
           apellidoComprador.push(docSnap.data().comprador.apellido)
           email.push(docSnap.data().comprador.email)
-          docSnap.data().items.forEach(comprado => productos.push(` ${comprado.nombre} precio de $${comprado.precio}. `))
+          docSnap.data().items.forEach(comprado => productos.push(` ${comprado.nombre} precio de $${comprado.precio}.\n `))
           total.push(docSnap.data().total)
           setInfo(1)
 
