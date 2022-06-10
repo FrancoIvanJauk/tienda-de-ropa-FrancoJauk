@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import {BsCart3} from "react-icons/bs";
-import { DropdownButton ,NavDropdown} from "react-bootstrap";
+import { NavDropdown} from "react-bootstrap";
 import {BsFillTrashFill} from "react-icons/bs"
 
 const CartWidget = () =>{
